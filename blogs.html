@@ -29,7 +29,7 @@
       </div>
 
       <div class="nav-menu" id="nav-menu">
-        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
         
         <!-- Services (desktop dropdown only) -->
         <!-- Services Dropdown with main link -->
@@ -39,19 +39,20 @@
       <span class="arrow">▼</span>
     </button>
     <div class="dropdown-content">
-        <a href="ai-automation.html">AI Automation</a>
-        <a href="website-development.html">Website Development</a>
-        <a href="web-applications.html">Web Applications</a>
+        <a href="AI Automation.html">AI Automation</a>
+        <a href="Website Development.html">Website Development</a>
+        <a href="Web Application.html">Web Applications</a>
         <a href="Chatbots.html">Chatbots</a>
         <a href="Vibe Marketing.html">Vibe Marketing</a>
         <a href="Mobile Application.html">Mobile Applications</a>
       </div>
     </div>
   
-     
-     <a href="about.html" class="nav-link">About</a>
-     <a href="blogs.html" class="nav-link active">Blog</a>
-     <a href="contact.html" class="nav-link">Contact</a>
+    
+    
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="blogs.html" class="nav-link active" data-i18n="nav.blog">Blog</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
                 <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
                     <span class="moon">🌙</span>
                     <span class="sun">☀️</span>
@@ -121,7 +122,88 @@
                 </div>
             </div>
         </section>
+         <!-- FAQ Section for Blogs Page -->
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title" data-i18n="blogs.faq.title">Blogs - Frequently Asked Questions</h2>
+    <div class="faq">
+
+      <div class="faq-item">
+        <button class="faq-question">What topics does the VIBEBUILD AI blog cover?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Our AI blog covers Artificial Intelligence, Automation, Machine Learning, Chatbots, Web Development, Mobile Apps, and Digital Marketing strategies with real-world applications.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Why should I follow an AI-focused blog?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>AI is transforming industries. By following our blog, you’ll gain insights into the latest AI tools, business automation trends, and case studies that can help your company grow.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How often do you publish AI blog articles?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>We publish fresh AI and technology content weekly, ensuring our readers stay ahead with updates on automation, AI-powered business tools, and digital innovations.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Are your AI blogs beginner-friendly?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Yes. Our AI blogs are designed for both beginners and professionals. We break down complex concepts like AI Automation, Machine Learning, and Chatbot Development into simple explanations.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you provide practical AI case studies in your blogs?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Absolutely. Many of our blog posts include AI case studies showing how businesses benefit from automation, customer support chatbots, and intelligent web applications.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can I request a blog topic about AI?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Yes! We welcome blog topic requests. If there’s a specific AI, Automation, or Digital Transformation subject you want us to cover, just contact us.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do your blogs explain AI tools and platforms?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Yes, our AI blogs often feature step-by-step guides on AI tools, chatbot builders, automation platforms, and digital marketing integrations to help businesses adopt AI smoothly.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How can AI blog content help my business?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Our AI blogs provide actionable insights on increasing efficiency, reducing costs, automating workflows, and leveraging chatbots to improve customer engagement.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you write about the future of AI and automation?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Yes. We regularly publish forward-looking AI blogs on trends like generative AI, predictive analytics, and automation, helping businesses prepare for the future of work.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do I stay updated with your AI blog posts?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>You can subscribe to our newsletter or follow us on social media. This way, you’ll get the latest AI blogs, tutorials, and case studies delivered straight to you.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     </main>
+    
 
     <footer class="footer">
         <div class="container">
@@ -169,199 +251,6 @@
     </footer>
 
     <!-- Floating Chatbot -->
-<!-- Floating Chatbot -->
-    <style>
-.floating-chatbot {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  z-index: 9999;
-}
-
-.chatbot-button {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(103, 61, 230, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.chatbot-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(103, 61, 230, 0.5);
-}
-
-.chatbot-tooltip {
-    background: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-size: 14px;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-
-/* === Chatbot Window === */
-.chatbot-window {
-  width: 280px;
-  height: 400px;
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
-  position: fixed;
-  bottom: 50px;
-  right: 120px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  z-index: 9999;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.chatbot-window.hidden { display: none; }
-
-.chatbot-header {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  color: #fff;
-  padding: 14px;
-  font-size: 16px;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.chatbot-header button {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-/* Messages Area */
-.chatbot-messages {
-  flex: 1;
-  padding: 14px;
-  overflow-y: auto;
-  background: #f9fafb;
-}
-
-/* Message Bubbles */
-.message {
-  margin: 8px 0;
-  padding: 10px 14px;
-  border-radius: 18px;
-  max-width: 75%;
-  word-wrap: break-word;
-  clear: both;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.message.bot {
-  background: #f3f4f6;
-  color: #111827;
-  float: left;
-  border-bottom-left-radius: 6px;
-  animation: fadeInLeft 0.3s ease;
-}
-
-.message.user {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  color: #fff;
-  float: right;
-  border-bottom-right-radius: 6px;
-  text-align: right;
-  animation: fadeInRight 0.3s ease;
-}
-
-/* Typing Animation */
-.typing {
-  display: inline-block;
-  background: #f3f4f6;
-  padding: 8px 14px;
-  border-radius: 18px;
-  margin: 8px 0;
-  font-size: 13px;
-  color: #555;
-}
-
-.typing::after {
-  content: '...';
-  animation: dots 1.5s steps(5, end) infinite;
-}
-
-@keyframes dots {
-  0%, 20% { content: '.'; }
-  40% { content: '..'; }
-  60%, 100% { content: '...'; }
-}
-
-/* Input Area */
-.chatbot-input {
-  display: flex;
-  border-top: 1px solid #e5e7eb;
-  background: #fff;
-}
-
-.chatbot-input input {
-  flex: 1;
-  border: none;
-  padding: 12px;
-  font-size: 14px;
-  outline: none;
-}
-
-.chatbot-input button {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  border: none;
-  color: #fff;
-  padding: 12px 16px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background 0.2s ease;
-}
-
-.chatbot-input button:hover {
-  background: linear-gradient(135deg, #5a32d6, #3f3ac9);
-}
-
-/* Animations */
-@keyframes fadeInLeft {
-  from { opacity: 0; transform: translateX(-20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .chatbot-window {
-    width: 90%;
-    max-height: 70%;
-    right: 5%;
-    bottom: 80px;
-  }
-  .chatbot-button {
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-  }
-}
-
-</style>
 <div class="floating-chatbot">
   <div class="chatbot-tooltip">Chat with us</div>
   <button class="chatbot-button">💬</button>
@@ -408,6 +297,14 @@
             dropdown.classList.toggle("show");
           });
         }
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".faq-question").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          item.classList.toggle("active");
+        });
       });
     </script>
   <script type="module" src="js/main.js"></script>

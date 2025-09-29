@@ -29,7 +29,7 @@
       </div>
 
       <div class="nav-menu" id="nav-menu">
-        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
         
         <!-- Services (desktop dropdown only) -->
         <!-- Services Dropdown with main link -->
@@ -39,18 +39,18 @@
       <span class="arrow">▼</span>
     </button>
     <div class="dropdown-content">
-        <a href="ai-automation.html">AI Automation</a>
-        <a href="website-development.html">Website Development</a>
-        <a href="web-applications.html">Web Applications</a>
+        <a href="AI Automation.html">AI Automation</a>
+        <a href="Website Development.html">Website Development</a>
+        <a href="Web Application.html">Web Applications</a>
         <a href="Chatbots.html">Chatbots</a>
         <a href="Vibe Marketing.html">Vibe Marketing</a>
         <a href="Mobile Application.html">Mobile Applications</a>
       </div>
     </div>
   
-     <a href="about.html" class="nav-link active">About</a>
-     <a href="blogs.html" class="nav-link">Blog</a>
-     <a href="contact.html" class="nav-link">Contact</a>
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="blogs.html" class="nav-link" data-i18n="nav.blog">Blog</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
                 <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
                     <span class="moon">🌙</span>
                     <span class="sun">☀️</span>
@@ -102,7 +102,7 @@
               </div>
               <div class="about-visual">
                 <div class="about-image-placeholder">
-                  <img src="" alt="About Vibe Build AI" class="about-image">
+                  <img src="aboutimg.webp" alt="About Vibe Build AI" class="about-image" width="300" height="300">
                   <span class="ai-animation"></span>
                 </div>
               </div>
@@ -140,7 +140,88 @@
                 </div>
             </div>
         </section>
+         <!-- FAQ Section -->
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title" data-i18n="home.faq.title">Frequently Asked Questions</h2>
+    <div class="faq">
+
+      <div class="faq-item">
+        <button class="faq-question">What exactly does “AI Automation” mean at VIBEBUILD?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>We create intelligent workflows and agents that automate repetitive tasks, integrate systems, and allow your business to scale with less manual effort.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you build websites from scratch or customize existing templates?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>We do both — depending on your needs. We can develop fully custom websites or adapt templates to your brand, while adding AI-powered features and performance optimization.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can you integrate chatbots into my existing website or app?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Yes. We can add conversational AI/chatbot capabilities to your existing site or mobile app (or build a new one), helping with lead capture, support, and user engagement.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What platforms and technologies do you use for mobile apps?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>We use modern tech stacks (React Native, Flutter, or native frameworks) depending on your requirements — prioritizing performance, scalability, and maintainability.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How does VIBEBUILD handle data privacy and security?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>We follow industry best practices: encrypted data transmission, secure storage, role-based access control, and compliance with relevant laws. We also audit AI models to ensure safe usage.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What’s the typical timeline for a project?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>It depends on complexity. A simple website + chatbot might take 4–6 weeks; a more complex web or mobile app could take 3–6 months. We provide a detailed roadmap before starting.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you offer post-launch support and maintenance?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Absolutely. We provide support packages to handle updates, bug fixes, monitoring, AI retraining, and feature enhancements after launch.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How much will a project cost?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Costs depend on scope, features, integrations, and complexity. Once we understand your requirements, we’ll provide a transparent quote. We also offer phased delivery options.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can you migrate an existing website or app to your solutions?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Yes. We handle migrations (front-end, back-end, and data) with minimal downtime and ensure data integrity during the transition.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do I get started?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Simply contact us via our form or schedule a consultation. We’ll understand your goals and propose a tailored AI strategy for your business.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     </main>
+    
 
     <footer class="footer">
         <div class="container">
@@ -188,199 +269,6 @@
     </footer>
 
     <!-- Floating Chatbot -->
-    <!-- Floating Chatbot -->
-    <style>
-.floating-chatbot {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  z-index: 9999;
-}
-
-.chatbot-button {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(103, 61, 230, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.chatbot-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(103, 61, 230, 0.5);
-}
-
-.chatbot-tooltip {
-    background: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-size: 14px;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-
-/* === Chatbot Window === */
-.chatbot-window {
-  width: 280px;
-  height: 400px;
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
-  position: fixed;
-  bottom: 50px;
-  right: 120px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  z-index: 9999;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.chatbot-window.hidden { display: none; }
-
-.chatbot-header {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  color: #fff;
-  padding: 14px;
-  font-size: 16px;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.chatbot-header button {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-/* Messages Area */
-.chatbot-messages {
-  flex: 1;
-  padding: 14px;
-  overflow-y: auto;
-  background: #f9fafb;
-}
-
-/* Message Bubbles */
-.message {
-  margin: 8px 0;
-  padding: 10px 14px;
-  border-radius: 18px;
-  max-width: 75%;
-  word-wrap: break-word;
-  clear: both;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.message.bot {
-  background: #f3f4f6;
-  color: #111827;
-  float: left;
-  border-bottom-left-radius: 6px;
-  animation: fadeInLeft 0.3s ease;
-}
-
-.message.user {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  color: #fff;
-  float: right;
-  border-bottom-right-radius: 6px;
-  text-align: right;
-  animation: fadeInRight 0.3s ease;
-}
-
-/* Typing Animation */
-.typing {
-  display: inline-block;
-  background: #f3f4f6;
-  padding: 8px 14px;
-  border-radius: 18px;
-  margin: 8px 0;
-  font-size: 13px;
-  color: #555;
-}
-
-.typing::after {
-  content: '...';
-  animation: dots 1.5s steps(5, end) infinite;
-}
-
-@keyframes dots {
-  0%, 20% { content: '.'; }
-  40% { content: '..'; }
-  60%, 100% { content: '...'; }
-}
-
-/* Input Area */
-.chatbot-input {
-  display: flex;
-  border-top: 1px solid #e5e7eb;
-  background: #fff;
-}
-
-.chatbot-input input {
-  flex: 1;
-  border: none;
-  padding: 12px;
-  font-size: 14px;
-  outline: none;
-}
-
-.chatbot-input button {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  border: none;
-  color: #fff;
-  padding: 12px 16px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background 0.2s ease;
-}
-
-.chatbot-input button:hover {
-  background: linear-gradient(135deg, #5a32d6, #3f3ac9);
-}
-
-/* Animations */
-@keyframes fadeInLeft {
-  from { opacity: 0; transform: translateX(-20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .chatbot-window {
-    width: 90%;
-    max-height: 70%;
-    right: 5%;
-    bottom: 80px;
-  }
-  .chatbot-button {
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-  }
-}
-
-</style>
 <div class="floating-chatbot">
   <div class="chatbot-tooltip">Chat with us</div>
   <button class="chatbot-button">💬</button>
@@ -427,6 +315,14 @@
             dropdown.classList.toggle("show");
           });
         }
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".faq-question").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          item.classList.toggle("active");
+        });
       });
     </script>
   <script type="module" src="js/main.js"></script> 

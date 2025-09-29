@@ -1976,3 +1976,455 @@ g-post-card:hover {
   background: #222;
 }
 
+.floating-chatbot {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+}
+
+.chatbot-button {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(103, 61, 230, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chatbot-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(103, 61, 230, 0.5);
+}
+
+.chatbot-tooltip {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* === Chatbot Window === */
+.chatbot-window {
+  width: 280px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  position: fixed;
+  bottom: 50px;
+  right: 120px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9999;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.chatbot-window.hidden { display: none; }
+
+.chatbot-header {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  color: #fff;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-header button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Messages Area */
+.chatbot-messages {
+  flex: 1;
+  padding: 14px;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+/* Message Bubbles */
+.message {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 18px;
+  max-width: 75%;
+  word-wrap: break-word;
+  clear: both;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message.bot {
+  background: #f3f4f6;
+  color: #111827;
+  float: left;
+  border-bottom-left-radius: 6px;
+  animation: fadeInLeft 0.3s ease;
+}
+
+.message.user {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  color: #fff;
+  float: right;
+  border-bottom-right-radius: 6px;
+  text-align: right;
+  animation: fadeInRight 0.3s ease;
+}
+
+/* Typing Animation */
+.typing {
+  display: inline-block;
+  background: #f3f4f6;
+  padding: 8px 14px;
+  border-radius: 18px;
+  margin: 8px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.typing::after {
+  content: '...';
+  animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
+}
+
+/* Input Area */
+.chatbot-input {
+  display: flex;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.chatbot-input input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.chatbot-input button {
+  background: linear-gradient(135deg, #673de6, #4f46e5);
+  border: none;
+  color: #fff;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.chatbot-input button:hover {
+  background: linear-gradient(135deg, #5a32d6, #3f3ac9);
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .chatbot-window {
+    width: 90%;
+    max-height: 70%;
+    right: 5%;
+    bottom: 80px;
+  }
+  .chatbot-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+/* FAQ Section */
+.faq-section {
+  padding: 60px 20px;
+}
+
+.faq-item {
+  border: 1px solid var(--border-color, #ccc);
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  background: var(--bg-secondary, #f9f9f9);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-primary, #222);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  color: var(--text-secondary, #555);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding-top: 10px;
+}
+
+.faq-icon {
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg); /* Turns + into × */
+}
+
+/* Light/Dark mode compatibility */
+:root[data-theme="light"] {
+  --text-primary: #222;
+  --text-secondary: #555;
+  --border-color: #ddd;
+  background: #fff;
+}
+
+:root[data-theme="dark"] {
+  --text-primary: #f5f5f5;
+  --text-secondary: #bbb;
+  --border-color: #444;
+  background: #111;
+}
+
+/* === AI Automation Page Scoped Styles === */
+.ai-automation-page .page-hero {
+  text-align: center;
+  padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+.ai-automation-page .page-hero h1 {
+  font-size: var(--font-size-5xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.ai-automation-page .page-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Services */
+.ai-automation-page .service-overview {
+  padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+.ai-automation-page .service-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.ai-automation-page .service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-500);
+}
+
+.ai-automation-page .service-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.ai-automation-page .service-icon {
+  font-size: var(--font-size-3xl);
+  color: var(--primary-500);
+}
+
+.ai-automation-page .service-body ul {
+  margin: var(--spacing-md) 0 var(--spacing-lg) var(--spacing-lg);
+  list-style: disc;
+}
+
+.ai-automation-page .service-pricing {
+  font-weight: 600;
+  margin-top: var(--spacing-md);
+  color: var(--primary-500);
+}
+
+/* Values */
+.ai-automation-page .values-section {
+  padding: var(--spacing-3xl) var(--spacing-lg);
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+}
+
+.ai-automation-page .values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.ai-automation-page .value-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: var(--spacing-xl);
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.ai-automation-page .value-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-500);
+  box-shadow: var(--shadow-md);
+}
+
+/* CTA */
+.ai-automation-page .cta-section {
+  text-align: center;
+  padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+.ai-automation-page .cta-section p {
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+  font-size: var(--font-size-lg);
+}
+
+/* FAQ */
+.ai-automation-page .faq-section {
+  padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+.ai-automation-page .faq-item {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  background: var(--bg-secondary);
+  transition: all var(--transition-normal);
+}
+
+.ai-automation-page .faq-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-500);
+}
+
+.ai-automation-page .faq-question {
+  font-weight: 600;
+  font-size: var(--font-size-lg);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.ai-automation-page .faq-answer {
+  display: none;
+  margin-top: var(--spacing-sm);
+  color: var(--text-secondary);
+}
+
+.ai-automation-page .faq-item.active .faq-answer {
+  display: block;
+}
+
+/* === AI Automation Page Fixes Only === */
+.ai-automation-page .page-hero {
+  margin-top: 70px; /* push hero below fixed header */
+  padding: var(--spacing-3xl) var(--spacing-lg);
+  text-align: center;
+}
+
+/* Adjust hero for small screens */
+@media (max-width: 768px) {
+  .ai-automation-page .page-hero {
+    margin-top: 60px; /* slightly smaller gap on mobile */
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+}
+
+/* Dropdown inherits theme variables */
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--dropdown-border);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-width: 220px;
+  display: none;
+  flex-direction: column;
+  z-index: 2000;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--dropdown-text);
+  font-weight: 500;
+  transition: background 0.2s;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--dropdown-hover);
+  color: var(--dropdown-text-hover);
+}
+
+/* Show on hover/focus */
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: flex;
+}
+
+

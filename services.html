@@ -29,7 +29,7 @@
       </div>
 
       <div class="nav-menu" id="nav-menu">
-        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
         
         <!-- Services (desktop dropdown only) -->
         <!-- Services Dropdown with main link -->
@@ -39,9 +39,9 @@
       <span class="arrow">▼</span>
     </button>
     <div class="dropdown-content">
-        <a href="ai-automation.html">AI Automation</a>
-        <a href="website-development.html">Website Development</a>
-        <a href="web-applications.html">Web Applications</a>
+        <a href="AI Automation.html">AI Automation</a>
+        <a href="Website Development.html">Website Development</a>
+        <a href="Web Application.html">Web Applications</a>
         <a href="Chatbots.html">Chatbots</a>
         <a href="Vibe Marketing.html">Vibe Marketing</a>
         <a href="Mobile Application.html">Mobile Applications</a>
@@ -49,9 +49,10 @@
     </div>
   
     
-     <a href="about.html" class="nav-link">About</a>
-     <a href="blogs.html" class="nav-link">Blog</a>
-     <a href="contact.html" class="nav-link">Contact</a>
+    
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="blogs.html" class="nav-link" data-i18n="nav.blog">Blog</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
                 <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
                     <span class="moon">🌙</span>
                     <span class="sun">☀️</span>
@@ -216,6 +217,87 @@
                 </div>
             </div>
         </section>
+
+        <!-- FAQ Section -->
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq">
+
+      <div class="faq-item">
+        <button class="faq-question">What is AI Automation, and how can it help my business?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>AI Automation uses artificial intelligence to streamline repetitive processes, improve accuracy, and save time. Businesses can use AI to automate customer support, data processing, lead management, and workflow tasks, allowing teams to focus on high-value work.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do chatbots improve customer support?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Chatbots provide 24/7 support, answer common questions instantly, and guide customers through purchasing or troubleshooting processes. They reduce response times, improve customer satisfaction, and lower support costs.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What’s the difference between web development and website designing?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Website designing focuses on the visual appeal, user interface, and overall look of your site, while web development ensures the functionality, backend systems, and integrations work seamlessly. Together, they create a complete digital experience.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you build custom web applications?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Yes, we create custom web applications tailored to your business needs, such as CRMs, dashboards, e-commerce platforms, and portals. Our web applications are secure, scalable, and designed for long-term growth.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What industries can benefit from Vibe Marketing?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Vibe Marketing works across industries like retail, e-commerce, SaaS, hospitality, healthcare, and finance. By blending AI insights with creative campaigns, we help brands connect authentically with their target audiences.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do you ensure mobile apps work across devices?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>We build mobile applications using modern frameworks that ensure cross-platform compatibility. Whether iOS or Android, our apps deliver consistent performance, seamless user experiences, and high security standards.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can AI be integrated with my existing website or app?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Yes. Our AI solutions integrate seamlessly with existing websites, web applications, and mobile apps. Whether it’s chatbots, predictive analytics, or process automation, we ensure smooth integration without disrupting current systems.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you provide post-launch support for websites and apps?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Absolutely. We offer ongoing support, updates, performance monitoring, and optimization for all websites, applications, and mobile apps we develop. Our goal is to ensure long-term success and smooth performance.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How much do your services cost?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>Pricing depends on the service and project scope. For example, simple website designs may start from $1,000, while custom web applications or AI solutions are quoted based on features, complexity, and integration needs. We also offer retainers for ongoing services.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do I know which service is right for my business?<span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <p>If you’re unsure, we recommend scheduling a free consultation with our team. We’ll review your business needs and suggest whether AI automation, a chatbot, a website, a web app, mobile development, or Vibe Marketing will deliver the best ROI.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     </main>
 
     <footer class="footer">
@@ -264,198 +346,6 @@
     </footer>
 
     <!-- Floating Chatbot -->
-    <style>
-.floating-chatbot {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  z-index: 9999;
-}
-
-.chatbot-button {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(103, 61, 230, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.chatbot-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(103, 61, 230, 0.5);
-}
-
-.chatbot-tooltip {
-    background: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-size: 14px;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-
-/* === Chatbot Window === */
-.chatbot-window {
-  width: 280px;
-  height: 400px;
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
-  position: fixed;
-  bottom: 50px;
-  right: 120px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  z-index: 9999;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.chatbot-window.hidden { display: none; }
-
-.chatbot-header {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  color: #fff;
-  padding: 14px;
-  font-size: 16px;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.chatbot-header button {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-/* Messages Area */
-.chatbot-messages {
-  flex: 1;
-  padding: 14px;
-  overflow-y: auto;
-  background: #f9fafb;
-}
-
-/* Message Bubbles */
-.message {
-  margin: 8px 0;
-  padding: 10px 14px;
-  border-radius: 18px;
-  max-width: 75%;
-  word-wrap: break-word;
-  clear: both;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.message.bot {
-  background: #f3f4f6;
-  color: #111827;
-  float: left;
-  border-bottom-left-radius: 6px;
-  animation: fadeInLeft 0.3s ease;
-}
-
-.message.user {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  color: #fff;
-  float: right;
-  border-bottom-right-radius: 6px;
-  text-align: right;
-  animation: fadeInRight 0.3s ease;
-}
-
-/* Typing Animation */
-.typing {
-  display: inline-block;
-  background: #f3f4f6;
-  padding: 8px 14px;
-  border-radius: 18px;
-  margin: 8px 0;
-  font-size: 13px;
-  color: #555;
-}
-
-.typing::after {
-  content: '...';
-  animation: dots 1.5s steps(5, end) infinite;
-}
-
-@keyframes dots {
-  0%, 20% { content: '.'; }
-  40% { content: '..'; }
-  60%, 100% { content: '...'; }
-}
-
-/* Input Area */
-.chatbot-input {
-  display: flex;
-  border-top: 1px solid #e5e7eb;
-  background: #fff;
-}
-
-.chatbot-input input {
-  flex: 1;
-  border: none;
-  padding: 12px;
-  font-size: 14px;
-  outline: none;
-}
-
-.chatbot-input button {
-  background: linear-gradient(135deg, #673de6, #4f46e5);
-  border: none;
-  color: #fff;
-  padding: 12px 16px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background 0.2s ease;
-}
-
-.chatbot-input button:hover {
-  background: linear-gradient(135deg, #5a32d6, #3f3ac9);
-}
-
-/* Animations */
-@keyframes fadeInLeft {
-  from { opacity: 0; transform: translateX(-20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(20px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .chatbot-window {
-    width: 90%;
-    max-height: 70%;
-    right: 5%;
-    bottom: 80px;
-  }
-  .chatbot-button {
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-  }
-}
-
-</style>
 <div class="floating-chatbot">
   <div class="chatbot-tooltip">Chat with us</div>
   <button class="chatbot-button">💬</button>
@@ -502,6 +392,14 @@
             dropdown.classList.toggle("show");
           });
         }
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".faq-question").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          item.classList.toggle("active");
+        });
       });
     </script>
   
