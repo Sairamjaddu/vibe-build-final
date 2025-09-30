@@ -32,7 +32,7 @@
       'home.services.marketing.title': 'Vibe Marketing',
       'home.services.marketing.desc': 'SEO, ads, content, and funnel optimization to drive measurable growth.',
       'home.services.mobapp.title': 'Mobile Applications',
-      'home.services.mobapp.desc': 'SEO, ads, content, and funnel optimization to drive measurable growth.',
+      'home.services.mobapp.desc': ' Custom mobile applications designed for iOS and Android to enhance user engagement and streamline business processes.',
 
       // Index - Tools
       'home.tools.title': 'Featured AI Tools',
@@ -146,10 +146,10 @@
       'home.services.webapp.desc': 'App web sicure e scalabili su misura per il tuo business.',
       'home.services.chatbots.title': 'Chatbot',
       'home.services.chatbots.desc': 'Assistenti 24/7 per supporto, qualificazione lead e flussi guidati.',
-      'home.services.marketing.title': 'Marketing Digitale',
+      'home.services.marketing.title': 'Marketing delle vibrazioni',
       'home.services.marketing.desc': 'SEO, advertising, contenuti e ottimizzazione funnel per crescita misurabile.',
-      'home.services.mobile.title': 'Applicazioni mobili',
-      'home.services.mobile.desc': 'SEO, ads, content, and funnel optimization to drive measurable growth.',
+      'home.services.mobapp.title': 'Applicazioni mobili',
+      'home.services.mobapp.desc': 'Applicazioni mobili personalizzate progettate per iOS e Android per migliorare il coinvolgimento degli utenti e semplificare i processi aziendali.',
 
       // Index - Tools
       'home.tools.title': 'Strumenti AI in evidenza',

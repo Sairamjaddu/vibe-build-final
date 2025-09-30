@@ -48,10 +48,10 @@
       </div>
     </div>
   
-    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
-    <a href="blogs.html" class="nav-link active" data-i18n="nav.blog">Blog</a>
-    <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contact</a>
-     
+    
+     <a href="about.html" class="nav-link">About</a>
+     <a href="blogs.html" class="nav-link">Blog</a>
+     <a href="contact.html" class="nav-link active">Contact</a>
                 <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
                     <span class="moon">🌙</span>
                     <span class="sun">☀️</span>
@@ -90,21 +90,21 @@
                         <div class="contact-details">
                             <div class="contact-item">
                                 <span class="contact-icon"></span>
-                                <span>hello@aiagency.com</span>
+                                <span>vibebuildofficial@gmail.com</span>
                             </div>
                             <div class="contact-item">
                                 <span class="contact-icon"></span>
-                                <span>+1 (555) 123-4567</span>
+                                <span>+91 93452 59599</span>
                             </div>
                             <div class="contact-item">
                                 <span class="contact-icon"></span>
-                                <span>San Francisco, CA</span>
+                                <span>INDIA & ITALY</span>
                             </div>
                         </div>
                     </div>
                     <form class="contact-form" id="contactPageForm" action="https://api.web3forms.com/submit" method="POST">
                         <!-- Web3Forms configuration -->
-                        <input type="hidden" name="access_key" value="528db928-b922-422b-b454-e0bb9e934cab">
+                        <input type="hidden" name="access_key" value="456bd1f5-a305-4bdd-a92d-3b37003bdfe0">
                         <input type="hidden" name="subject" value="New Contact Form Submission from VibeBuild">
                         <input type="hidden" name="from_name" value="VibeBuild Contact Form">
                         <input type="hidden" name="redirect" value="https://web3forms.com/success">
@@ -170,11 +170,11 @@
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
+                      <a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=100566255736378" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.linkedin.com/company/vibebuild/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/vibebuild.io/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                      <a href="https://x.com/vibebuild_io" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                  </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -457,7 +457,7 @@
             
             // Prepare form data for Web3Forms submission
             const formData = new FormData();
-            formData.append('access_key', '528db928-b922-422b-b454-e0bb9e934cab');
+            formData.append('access_key', '456bd1f5-a305-4bdd-a92d-3b37003bdfe0');
             formData.append('name', name);
             formData.append('email', email);
             formData.append('phone', phone);
@@ -469,7 +469,6 @@ Subject: ${subject}
 
 Message:
 ${message}`);
-            formData.append('to', 'zengoesss.sr@gmail.com');
             formData.append('from_name', 'VibeBuild Contact Form');
             
             // Submit to Web3Forms API
@@ -480,7 +479,7 @@ ${message}`);
             .then(response => response.json())
             .then(data => {
               if (data.success) {
-                // Success - email sent automatically to zengoesss.sr@gmail.com
+                // Success - email sent successfully
                 alert('Thank you! Your message has been sent successfully. We will get back to you soon.');
                 this.reset(); // Clear the form
               } else {

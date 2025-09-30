@@ -2236,162 +2236,7 @@ g-post-card:hover {
   background: #111;
 }
 
-/* === AI Automation Page Scoped Styles === */
-.ai-automation-page .page-hero {
-  text-align: center;
-  padding: var(--spacing-3xl) var(--spacing-lg);
-}
 
-.ai-automation-page .page-hero h1 {
-  font-size: var(--font-size-5xl);
-  margin-bottom: var(--spacing-md);
-}
-
-.ai-automation-page .page-hero p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: var(--font-size-lg);
-  color: var(--text-secondary);
-  line-height: var(--line-height-relaxed);
-}
-
-/* Services */
-.ai-automation-page .service-overview {
-  padding: var(--spacing-3xl) var(--spacing-lg);
-}
-
-.ai-automation-page .service-card {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: var(--spacing-xl);
-  box-shadow: var(--shadow-md);
-  transition: all var(--transition-normal);
-}
-
-.ai-automation-page .service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-xl);
-  border-color: var(--primary-500);
-}
-
-.ai-automation-page .service-header {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
-}
-
-.ai-automation-page .service-icon {
-  font-size: var(--font-size-3xl);
-  color: var(--primary-500);
-}
-
-.ai-automation-page .service-body ul {
-  margin: var(--spacing-md) 0 var(--spacing-lg) var(--spacing-lg);
-  list-style: disc;
-}
-
-.ai-automation-page .service-pricing {
-  font-weight: 600;
-  margin-top: var(--spacing-md);
-  color: var(--primary-500);
-}
-
-/* Values */
-.ai-automation-page .values-section {
-  padding: var(--spacing-3xl) var(--spacing-lg);
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border-color);
-}
-
-.ai-automation-page .values-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--spacing-xl);
-  margin-top: var(--spacing-xl);
-}
-
-.ai-automation-page .value-card {
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: var(--spacing-xl);
-  text-align: center;
-  transition: all var(--transition-normal);
-}
-
-.ai-automation-page .value-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--primary-500);
-  box-shadow: var(--shadow-md);
-}
-
-/* CTA */
-.ai-automation-page .cta-section {
-  text-align: center;
-  padding: var(--spacing-3xl) var(--spacing-lg);
-}
-
-.ai-automation-page .cta-section p {
-  max-width: 700px;
-  margin: 0 auto var(--spacing-lg);
-  font-size: var(--font-size-lg);
-}
-
-/* FAQ */
-.ai-automation-page .faq-section {
-  padding: var(--spacing-3xl) var(--spacing-lg);
-}
-
-.ai-automation-page .faq-item {
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-  padding: var(--spacing-md) var(--spacing-lg);
-  margin-bottom: var(--spacing-md);
-  background: var(--bg-secondary);
-  transition: all var(--transition-normal);
-}
-
-.ai-automation-page .faq-item:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--primary-500);
-}
-
-.ai-automation-page .faq-question {
-  font-weight: 600;
-  font-size: var(--font-size-lg);
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  color: var(--text-primary);
-}
-
-.ai-automation-page .faq-answer {
-  display: none;
-  margin-top: var(--spacing-sm);
-  color: var(--text-secondary);
-}
-
-.ai-automation-page .faq-item.active .faq-answer {
-  display: block;
-}
-
-/* === AI Automation Page Fixes Only === */
-.ai-automation-page .page-hero {
-  margin-top: 70px; /* push hero below fixed header */
-  padding: var(--spacing-3xl) var(--spacing-lg);
-  text-align: center;
-}
-
-/* Adjust hero for small screens */
-@media (max-width: 768px) {
-  .ai-automation-page .page-hero {
-    margin-top: 60px; /* slightly smaller gap on mobile */
-    padding: var(--spacing-2xl) var(--spacing-md);
-  }
-}
 
 /* Dropdown inherits theme variables */
 .dropdown-content {
@@ -2425,6 +2270,18 @@ g-post-card:hover {
 .dropdown:hover .dropdown-content,
 .dropdown:focus-within .dropdown-content {
   display: flex;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;   /* makes it full screen if needed */
+  background: #000; /* optional background */
+}
+.hud-loader {
+  width: 400px;
+  height: 400px;
 }
 
 

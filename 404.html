@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | VIBEBUILD.IO</title>
+  <meta name="description" content="The page you are looking for could not be found.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        var theme = saved || (prefersLight ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) { /* noop */ }
+    })();
+  </script>
+  <style>
+    .error-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 70vh;
+      padding: var(--spacing-xl);
+    }
+    
+    .error-code {
+      font-size: var(--font-size-6xl);
+      font-weight: 700;
+      margin-bottom: var(--spacing-md);
+      color: var(--primary-600);
+    }
+    
+    .error-title {
+      font-size: var(--font-size-3xl);
+      font-weight: 600;
+      margin-bottom: var(--spacing-lg);
+    }
+    
+    .error-message {
+      font-size: var(--font-size-lg);
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin-bottom: var(--spacing-xl);
+    }
+    
+    .search-container {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: var(--spacing-xl);
+    }
+    
+    .search-form {
+      display: flex;
+      width: 100%;
+    }
+    
+    .search-input {
+      flex: 1;
+      padding: var(--spacing-md);
+      border: 1px solid var(--border-color);
+      border-radius: 4px 0 0 4px;
+      font-size: var(--font-size-base);
+      background-color: var(--bg-secondary);
+      color: var(--text-primary);
+    }
+    
+    .search-button {
+      padding: var(--spacing-md) var(--spacing-lg);
+      background-color: var(--primary-600);
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    
+    .search-button:hover {
+      background-color: var(--primary-700);
+    }
+    
+    .error-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--spacing-md);
+      margin-top: var(--spacing-lg);
+    }
+    
+    .error-links a {
+      color: var(--primary-600);
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+    
+    .error-links a:hover {
+      color: var(--primary-700);
+      text-decoration: underline;
+    }
+    
+    .error-illustration {
+      margin-bottom: var(--spacing-xl);
+      max-width: 300px;
+      opacity: 0.8;
+    }
+    
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: var(--font-size-5xl);
+      }
+      
+      .error-title {
+        font-size: var(--font-size-2xl);
+      }
+      
+      .error-message {
+        font-size: var(--font-size-base);
+      }
+      
+      .search-container {
+        max-width: 100%;
+      }
+      
+      .error-illustration {
+        max-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-brand">
+        <a href="index.html">VIBEBUILD</a>
+      </div>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+
+        <!-- Services (desktop dropdown only) -->
+        <div class="dropdown desktop-only">
+          <a href="services.html" class="nav-link">Services</a>
+          <button type="button" class="dropdown-toggle" id="services-toggle" aria-expanded="false">
+            <span class="arrow">▼</span>
+          </button>
+          <div class="dropdown-content">
+            <a href="AI Automation.html">AI Automation</a>
+            <a href="Website Development.html">Website Development</a>
+            <a href="Web Application.html">Web Applications</a>
+            <a href="Chatbots.html">Chatbots</a>
+            <a href="Vibe Marketing.html">Vibe Marketing</a>
+            <a href="Mobile Application.html">Mobile Applications</a>
+          </div>
+        </div>
+        
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blogs.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
+          <span class="moon">🌙</span>
+          <span class="sun">☀️</span>                    
+        </button>
+        <button id="lang-toggle" class="lang-toggle lang-toggle-desktop" aria-label="Toggle language">EN</button>
+      </div>
+      <div class="nav-actions">
+        <button id="theme-toggle-mobile" class="theme-toggle theme-toggle-mobile" aria-label="Toggle theme">
+          <span class="moon">🌙</span>
+          <span class="sun">☀️</span>
+        </button>
+        <button id="lang-toggle-mobile" class="lang-toggle lang-toggle-mobile" aria-label="Toggle language">EN</button>
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="error-container">
+      <div class="error-illustration">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+          <path d="M250 450C361.046 450 450 361.046 450 250C450 138.954 361.046 50 250 50C138.954 50 50 138.954 50 250C50 361.046 138.954 450 250 450Z" fill="var(--bg-tertiary)" stroke="var(--primary-600)" stroke-width="8"/>
+          <path d="M180 170L320 310M320 170L180 310" stroke="var(--primary-600)" stroke-width="16" stroke-linecap="round"/>
+          <path d="M250 350V350C305.228 350 350 305.228 350 250V250" stroke="var(--primary-600)" stroke-width="12" stroke-linecap="round"/>
+          <path d="M150 250V250C150 194.772 194.772 150 250 150V150" stroke="var(--primary-600)" stroke-width="12" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h1 class="error-code">404</h1>
+      <h2 class="error-title">Page Not Found</h2>
+      <p class="error-message">
+        The page you are looking for might have been removed, had its name changed, or is temporarily unavailable. 
+        Please try searching or navigate to one of the links below.
+      </p>
+      
+      <div class="search-container">
+        <form class="search-form" action="https://www.google.com/search" method="get">
+          <input type="hidden" name="sitesearch" value="vibebuild.io">
+          <input type="text" name="q" class="search-input" placeholder="Search our website..." required>
+          <button type="submit" class="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      
+      <div class="btn-container">
+        <a href="index.html" class="btn btn-primary">Return to Homepage</a>
+      </div>
+      
+      <div class="error-links">
+        <a href="services.html">Our Services</a>
+        <a href="about.html">About Us</a>
+        <a href="blogs.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-brand">
+            <h3>VIBEBUILD</h3>
+            <p>Transforming businesses with cutting-edge AI solutions.</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blogs.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="AI Automation.html">AI Automation</a></li>
+            <li><a href="Website Development.html">Website Development</a></li>
+            <li><a href="Web Application.html">Web Application</a></li>
+            <li><a href="Chatbots.html">Chatbots</a></li>
+            <li><a href="Vibe Marketing.html">Vibe Marketing</a></li>
+            <li><a href="Mobile Application.html">Mobile Application</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=100566255736378" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/vibebuild/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/vibebuild.io/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/vibebuild_io" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 VIBEBUILD. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Chatbot -->
+  <div class="floating-chatbot">
+    <div class="chatbot-tooltip">Chat with us</div>
+    <button class="chatbot-button">💬</button>
+  </div>
+
+  <div class="chatbot-window hidden" id="chatbot-window">
+    <div class="chatbot-header">
+      AI Assistant
+      <button id="chatbot-close">✖</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbot-text" placeholder="Type a message...">
+      <button id="chatbot-send">➤</button>
+    </div>
+  </div>
+
+  <script>
+    // Theme toggle for desktop and mobile
+    (function() {
+      var desktopBtn = document.getElementById('theme-toggle');
+      var mobileBtn = document.getElementById('theme-toggle-mobile');
+      function setTheme(t) {
+        document.documentElement.setAttribute('data-theme', t);
+        try { localStorage.setItem('theme', t); } catch(e){}
+      }
+      function toggleTheme() {
+        var current = document.documentElement.getAttribute('data-theme') || 'dark';
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      }
+      if (desktopBtn) desktopBtn.addEventListener('click', toggleTheme);
+      if (mobileBtn) mobileBtn.addEventListener('click', toggleTheme);
+    })();
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("services-toggle");
+      if (toggleBtn) {
+        const dropdown = toggleBtn.nextElementSibling;
+    
+        toggleBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
+          toggleBtn.setAttribute("aria-expanded", String(!isOpen));
+          dropdown.classList.toggle("show");
+        });
+      }
+    });
+  </script>
+  <script type="module" src="js/main.js"></script>  
+</body>
+</html>
