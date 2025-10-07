@@ -150,7 +150,9 @@
   function renderGrid(filter) {
     renderCategories(filter||'all');
     renderTags();
+    document.querySelector('.blog-grid-section').classList.add('single-post');
     gridEl.innerHTML = '';
+    document.querySelector('.blog-grid-section').classList.remove('single-post');
     const list = (filter && filter!=='all') ? POSTS.filter(p=>p.category===filter) : POSTS;
     list.forEach(post => gridEl.appendChild(card(post)));
   }
@@ -184,6 +186,7 @@
   function renderPost(slug) {
     const post = POSTS.find(p => p.slug === slug);
     gridEl.innerHTML = '';
+    document.querySelector('.blog-grid-section').classList.remove('single-post');
     if (!post) {
       const nf = document.createElement('div');
       nf.className = 'blog-post-card';
