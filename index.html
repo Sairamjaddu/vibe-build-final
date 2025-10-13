@@ -45,17 +45,17 @@
         <!-- Services (desktop dropdown only) -->
         <!-- Services Dropdown with main link -->
       <div class="dropdown desktop-only">
-      <a href="services.html" class="nav-link">Services</a>
+      <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
       <button type="button" class="dropdown-toggle" id="services-toggle" aria-expanded="false">
       <span class="arrow">▼</span>
     </button>
     <div class="dropdown-content">
-        <a href="AI Automation.html">AI Automation</a>
-        <a href="Website Development.html">Website Development</a>
-        <a href="Web Application.html">Web Applications</a>
-        <a href="Chatbots.html">Chatbots</a>
-        <a href="Vibe Marketing.html">Vibe Marketing</a>
-        <a href="Mobile Application.html">Mobile Applications</a>
+        <a href="AI Automation.html" data-i18n="home.services.ai_automation.title">AI Automation</a>
+      <a href="Website Development.html" data-i18n="home.services.website.title">Website Development</a>
+        <a href="Web Application.html" data-i18n="home.services.webapp.title">Web Applications</a>
+        <a href="Chatbots.html" data-i18n="home.services.chatbots.title">Chatbots</a>
+        <a href="Vibe Marketing.html" data-i18n="home.services.marketing.title">Vibe Marketing</a>
+        <a href="Mobile Application.html" data-i18n="home.services.mobapp.title">Mobile Applications</a>
       </div>
     </div>
   
@@ -113,9 +113,6 @@
     </div>
   </section>
   
-        
-              
-
   <style>
 /* Ensure header stays fixed */
 .header {
@@ -259,11 +256,12 @@ main {
         <!-- Contact Form -->
         <section id="contact" class="contact-section">
             <div class="container">
-                <h2 class="section-title" data-i18n="home.contact.title">Get In Touch</h2>
-                <p class="section-subtitle" data-i18n="home.contact.subtitle">Ready to discuss your AI project? We're here to help.</p>
+                <h2 class="section-title" data-i18n="home.contact.title">Ready to discuss your AI project? We're here to help.</h2></div>
+                <p class="section-subtitle"> </p>
+               <div>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3 data-i18n="home.contact.lets_talk">Let's Talk</h3>
+                        <h3 data-i18n="home.contact.lets_talk">Get In Touch</h3>
                         <p data-i18n="home.contact.desc">We'd love to hear about your project and how we can help you achieve your goals with AI.</p>
                         <div class="contact-details">
                             <div class="contact-item">
@@ -310,79 +308,96 @@ main {
       <div class="faq">
   
         <div class="faq-item">
-          <button class="faq-question">What services does VIBEBUILD offer?<span class="faq-icon">+</span></button>
+          <button class="faq-question">
+            <span data-i18n="a.faq1">What services does VIBEBUILD offer?</span>
+            <span class="faq-icon">+</span></button>
           <div class="faq-answer">
-            <p>We specialize in AI Automation, Website Development, Web Applications, Chatbots, Mobile Applications, and Digital Marketing solutions tailored to your business goals.</p>
+            <p data-i18n="a.faq1.a">We specialize in AI Automation, Website Development, Web Applications, Chatbots, Mobile Applications, and Digital Marketing solutions tailored to your business goals.</p>
           </div>
         </div>
   
         <div class="faq-item">
-          <button class="faq-question">How can AI help my business?<span class="faq-icon">+</span></button>
+          <button class="faq-question">
+            <span data-i18n="a.faq2">How can AI help my business?</span>
+            <span class="faq-icon">+</span></button>
           <div class="faq-answer">
-            <p>AI can automate repetitive tasks, optimize workflows, improve customer support, and help scale your operations with intelligent, data-driven solutions.</p>
+            <p data-i18n="a.faq2.a">AI can automate repetitive tasks, optimize workflows, improve customer support, and help scale your operations with intelligent, data-driven solutions.</p>
           </div>
         </div>
   
         <div class="faq-item">
-          <button class="faq-question">Do you provide custom AI solutions?<span class="faq-icon">+</span></button>
+          <button class="faq-question">
+            <span data-i18n="a.faq3">Do you provide custom AI solutions?</span>
+            <span class="faq-icon">+</span></button>
           <div class="faq-answer">
-            <p>Yes! Every business is unique, and we design custom AI solutions that fit your industry, processes, and long-term growth strategy.</p>
+            <p data-i18n="a.faq3.a">Yes! Every business is unique, and we design custom AI solutions that fit your industry, processes, and long-term growth strategy.</p>
           </div>
         </div>
   
         <div class="faq-item">
-          <button class="faq-question">How do I get started with VIBEBUILD?<span class="faq-icon">+</span></button>
+          <button class="faq-question">
+            <span data-i18n="a.faq4">How do I get started with VIBEBUILD?</span>
+            <span class="faq-icon">+</span></button>
           <div class="faq-answer">
-            <p>Simply reach out through our contact form or schedule a free consultation. Our team will understand your requirements and recommend the best roadmap for your project.</p>
+            <p data-i18n="a.faq4.a">Simply reach out through our contact form or schedule a free consultation. Our team will understand your requirements and recommend the best roadmap for your project.</p>
           </div>
         </div>
   
         <div class="faq-item">
-          <button class="faq-question">What industries do you work with?<span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>We work across multiple industries including e-commerce, healthcare, education, finance, real estate, SaaS, and professional services, adapting our AI and digital solutions to fit your specific needs.</p>
+          <button class="faq-question">
+            <span data-i18n="a.faq5">What industries do you work with?</span>
+            <span class="faq-icon">+</span></button>
+          <div class="faq-answer" >
+            <p data-i18n="a.faq5.a">We work across multiple industries including e-commerce, healthcare, education, finance, real estate, SaaS, and professional services, adapting our AI and digital solutions to fit your specific needs.</p>
           </div>
         </div>
   
         <div class="faq-item">
-          <button class="faq-question">Do you offer ongoing support and maintenance?<span class="faq-icon">+</span></button>
+          <button class="faq-question"><span data-i18n="a.faq6">Do you offer ongoing support and maintenance?</span>
+            <span class="faq-icon">+</span></button>
           <div class="faq-answer">
-            <p>Yes. Beyond development, we provide ongoing support, performance monitoring, updates, and optimizations to ensure your systems continue running smoothly.</p>
+            <p data-i18n="a.faq6.a">Yes. Beyond development, we provide ongoing support, performance monitoring, updates, and optimizations to ensure your systems continue running smoothly.</p>
           </div>
         </div>
   
         <div class="faq-item">
-          <button class="faq-question">What makes VIBEBUILD different from other agencies?<span class="faq-icon">+</span></button>
+          <button class="faq-question"><span data-i18n="a.faq7">What makes VIBEBUILD different from other agencies?</span>
+            <span class="faq-icon">+</span></button>
           <div class="faq-answer">
-            <p>Unlike traditional agencies, we combine AI-driven automation with creative digital strategies. Our focus is on efficiency, scalability, and measurable impact—not just delivering projects but helping you grow sustainably.</p>
+            <p data-i18n="a.faq7.a">Unlike traditional agencies, we combine AI-driven automation with creative digital strategies. Our focus is on efficiency, scalability, and measurable impact—not just delivering projects but helping you grow sustainably.</p>
           </div>
         </div>
   
         <div class="faq-item">
-          <button class="faq-question">How long does it take to develop a project?<span class="faq-icon">+</span></button>
+          <button class="faq-question">
+            <span data-i18n="a.faq8">How long does it take to develop a project?</span>
+            <span class="faq-icon">+</span></button>
           <div class="faq-answer">
-            <p>Timelines vary depending on complexity. Simple websites can take 2–4 weeks, while full-scale web applications or AI systems may require 8–16 weeks. We always provide a detailed timeline before starting.</p>
+            <p data-i18n="a.faq8.a">Timelines vary depending on complexity. Simple websites can take 2–4 weeks, while full-scale web applications or AI systems may require 8–16 weeks. We always provide a detailed timeline before starting.</p>
           </div>
         </div>
   
         <div class="faq-item">
-          <button class="faq-question">Is VIBEBUILD’s pricing flexible?<span class="faq-icon">+</span></button>
+          <button class="faq-question"><span data-i18n="a.faq9">Is VIBEBUILD’s pricing flexible?</span>
+            <span class="faq-icon">+</span></button>
           <div class="faq-answer">
-            <p>Yes. We offer flexible pricing models including fixed-cost projects, monthly retainers, and pay-as-you-scale packages, making our solutions accessible to startups and enterprises alike.</p>
+            <p data-i18n="a.faq9.a">Yes. We offer flexible pricing models including fixed-cost projects, monthly retainers, and pay-as-you-scale packages, making our solutions accessible to startups and enterprises alike.</p>
           </div>
         </div>
   
         <div class="faq-item">
-          <button class="faq-question">Can VIBEBUILD help with digital marketing and brand growth?<span class="faq-icon">+</span></button>
+          <button class="faq-question">
+            <span data-i18n="a.faq10">Can VIBEBUILD help with digital marketing and brand growth?</span>
+            <span class="faq-icon">+</span></button>
           <div class="faq-answer">
-            <p>Absolutely. Along with development and automation, we provide Vibe Marketing services including SEO, paid ads, content marketing, and social media strategies to grow your brand’s visibility and customer base.</p>
+            <p data-i18n="a.faq10.a">Absolutely. Along with development and automation, we provide Vibe Marketing services including SEO, paid ads, content marketing, and social media strategies to grow your brand’s visibility and customer base.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
   
-  </section>
+ 
   
 
     <footer class="footer">
@@ -390,32 +405,32 @@ main {
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-brand">
-                        <h3>AI Agency</h3>
-                        <p>Transforming businesses with cutting-edge artificial intelligence solutions.</p>
+                        <h3>VIBEBUILD</h3>
+                        <p data-i18n="footer.brand.desc">Transforming businesses with cutting-edge artificial intelligence solutions.</p>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4 data-i18n="footer.quick_links">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blogs.html">Blog</a></li>
+                        <li data-i18n="nav.home"><a href="index.html">Home</a></li>
+                        <li data-i18n="nav.about"><a href="about.html">About</a></li>
+                        <li data-i18n="nav.services"><a href="services.html">Services</a></li>
+                        <li data-i18n="nav.blog"><a href="blogs.html">Blog</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h4 data-i18n="footer.services">Services</h4>
                     <ul class="footer-links">
-                        <li><a href="AI Automation.html">AI Automation</a></li>
-                        <li><a href="Website Development.html">Website Development</a></li>
-                        <li><a href="Web Application.html">Web Application</a></li>
-                        <li><a href="Chatbots.html">Chatbots</a></li>
-                        <li><a href="Vibe Marketing.html">Vibe Marketing</a></li>
-                        <li><a href="Mobile Application.html">Mobile Application</a></li>
+                        <li data-i18n="home.services.ai_automation.title"><a href="AI Automation.html">AI Automation</a></li>
+                        <li data-i18n="home.services.website.title"><a href="Website Development.html">Website Development</a></li>
+                        <li data-i18n="home.services.webapp.title"><a href="Web Application.html">Web Application</a></li>
+                        <li data-i18n="home.services.chatbots.title"><a href="Chatbots.html">Chatbots</a></li>
+                        <li data-i18n="home.services.marketing.title"><a href="Vibe Marketing.html">Vibe Marketing</a></li>
+                        <li data-i18n="home.services.mobapp.title"><a href="Mobile Application.html">Mobile Application</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Follow Us</h4>
+                    <h4 data-i18n="footer.follow">Follow Us</h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=100566255736378" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://www.linkedin.com/company/vibebuild/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -425,7 +440,7 @@ main {
                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AI Agency. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2025 AI Agency. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -489,10 +504,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   </script>
-  
-
-<canvas id="canvas"></canvas>
-  <script src="path/to/TubesCursor.js"></script>  
 <script type="module" src="js/main.js"></script>
 </body>
 </html>

@@ -38,29 +38,29 @@
       </div>
 
       <div class="nav-menu" id="nav-menu">
-        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
         
         <!-- Services (desktop dropdown only) -->
         <!-- Services Dropdown with main link -->
-      <div class="dropdown desktop-only">
-      <a href="services.html" class="nav-link">Services</a>
-      <button type="button" class="dropdown-toggle" id="services-toggle" aria-expanded="false">
-      <span class="arrow">▼</span>
-    </button>
-    <div class="dropdown-content">
-        <a href="ai-automation.html">AI Automation</a>
-        <a href="website-development.html">Website Development</a>
-        <a href="web-applications.html">Web Applications</a>
-        <a href="Chatbots.html">Chatbots</a>
-        <a href="Vibe Marketing.html">Vibe Marketing</a>
-        <a href="Mobile Application.html">Mobile Applications</a>
-      </div>
-    </div>
+        <div class="dropdown desktop-only">
+          <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+          <button type="button" class="dropdown-toggle" id="services-toggle" aria-expanded="false">
+          <span class="arrow">▼</span>
+        </button>
+        <div class="dropdown-content">
+            <a href="AI Automation.html" data-i18n="home.services.ai_automation.title">AI Automation</a>
+          <a href="Website Development.html" data-i18n="home.services.website.title">Website Development</a>
+            <a href="Web Application.html" data-i18n="home.services.webapp.title">Web Applications</a>
+            <a href="Chatbots.html" data-i18n="home.services.chatbots.title">Chatbots</a>
+            <a href="Vibe Marketing.html" data-i18n="home.services.marketing.title">Vibe Marketing</a>
+            <a href="Mobile Application.html" data-i18n="home.services.mobapp.title">Mobile Applications</a>
+          </div>
+        </div>
   
     
-     <a href="about.html" class="nav-link">About</a>
-     <a href="blogs.html" class="nav-link">Blog</a>
-     <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="blogs.html" class="nav-link" data-i18n="nav.blog">Blog</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
                 <button id="theme-toggle" class="theme-toggle theme-toggle-desktop" aria-label="Toggle theme">
                     <span class="moon">🌙</span>
                     <span class="sun">☀️</span>
@@ -147,50 +147,49 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <h3>AI Agency</h3>
-                        <p>Transforming businesses with cutting-edge artificial intelligence solutions.</p>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blogs.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul class="footer-links">
-                      <li><a href="AI Automation.html">AI Automation</a></li>
-                      <li><a href="Website Development.html">Website Development</a></li>
-                      <li><a href="Web Application.html">Web Application</a></li>
-                      <li><a href="Chatbots.html">Chatbots</a></li>
-                      <li><a href="Vibe Marketing.html">Vibe Marketing</a></li>
-                      <li><a href="Mobile Application.html">Mobile Application</a></li>
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-section">
+                  <div class="footer-brand">
+                      <h3>VIBEBUILD</h3>
+                      <p data-i18n="footer.brand.desc">Transforming businesses with cutting-edge artificial intelligence solutions.</p>
+                  </div>
+              </div>
+              <div class="footer-section">
+                  <h4 data-i18n="footer.quick_links">Quick Links</h4>
+                  <ul class="footer-links">
+                      <li data-i18n="nav.home"><a href="index.html">Home</a></li>
+                      <li data-i18n="nav.about"><a href="about.html">About</a></li>
+                      <li data-i18n="nav.services"><a href="services.html">Services</a></li>
+                      <li data-i18n="nav.blog"><a href="blogs.html">Blog</a></li>
                   </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
+              </div>
+              <div class="footer-section">
+                  <h4 data-i18n="footer.services">Services</h4>
+                  <ul class="footer-links">
+                      <li data-i18n="home.services.ai_automation.title"><a href="AI Automation.html">AI Automation</a></li>
+                      <li data-i18n="home.services.website.title"><a href="Website Development.html">Website Development</a></li>
+                      <li data-i18n="home.services.webapp.title"><a href="Web Application.html">Web Application</a></li>
+                      <li data-i18n="home.services.chatbots.title"><a href="Chatbots.html">Chatbots</a></li>
+                      <li data-i18n="home.services.marketing.title"><a href="Vibe Marketing.html">Vibe Marketing</a></li>
+                      <li data-i18n="home.services.mobapp.title"><a href="Mobile Application.html">Mobile Application</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h4 data-i18n="footer.follow">Follow Us</h4>
+                  <div class="social-links">
                       <a href="https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IN&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=100566255736378" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
                       <a href="https://www.linkedin.com/company/vibebuild/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
                       <a href="https://www.instagram.com/vibebuild.io/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
                       <a href="https://x.com/vibebuild_io" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
                   </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 AI Agency. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+             </div>
+          </div>
+          <div class="footer-bottom">
+              <p data-i18n="footer.copyright">&copy; 2025 AI Agency. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
 
     <!-- Floating Chatbot -->
     <!-- Floating Chatbot -->

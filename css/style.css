@@ -141,6 +141,63 @@ body {
     overflow-x: hidden;
 }
 
+/* ===== Blog single-post fullscreen (desktop only) ===== */
+@media (min-width: 1024px) {
+  html.post-fullscreen, body.post-fullscreen {
+    min-height: 100%;
+    overflow-y: auto; /* allow smooth vertical scroll */
+  }
+  html.post-fullscreen .header,
+  body.post-fullscreen .header,
+  html.post-fullscreen .footer,
+  body.post-fullscreen .footer,
+  html.post-fullscreen .newsletter-section,
+  body.post-fullscreen .newsletter-section,
+  html.post-fullscreen .faq-section,
+  body.post-fullscreen .faq-section,
+  html.post-fullscreen .floating-chatbot,
+  body.post-fullscreen .floating-chatbot {
+    display: none !important; /* hide non-essential UI */
+  }
+  html.post-fullscreen .page-hero {
+    display: none !important;
+  }
+  html.post-fullscreen .blog-grid-section {
+    padding: 0;
+    background: var(--bg-primary);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  html.post-fullscreen .blog-grid-section .container {
+    grid-template-columns: 1fr !important; /* hide sidebar */
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .fullscreen-stage {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 48px 24px; /* breathing room for scroll */
+  }
+  .fullscreen-card {
+    max-width: 1100px;
+    width: 90vw;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  .fullscreen-card .post-image-placeholder {
+    height: 140px;
+  }
+  .fullscreen-card .post-content {
+    padding: 24px 24px 24px;
+  }
+}
+
 /* Theme Toggle Button */
 .theme-toggle {
     position: absolute;
@@ -408,9 +465,7 @@ p {
     }
 }
 
-/* ===========================
-   HERO SECTION
-=========================== */
+/* HERO SECTION*/
 
 .hero {
   min-height: calc(100vh - var(--header-height));
@@ -430,7 +485,7 @@ p {
 }
 
 /* Hero Text Content */
-.hero-content {
+ .hero-content {
   flex: 1;
   min-width: 300px;
   max-width: 600px;
@@ -524,7 +579,7 @@ p {
     width: 260px;
     height: 260px;
   }
-}
+} 
 
 
 /* Section Styles */
@@ -1123,8 +1178,45 @@ p {
 
 .blog-grid-section .container {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 260px 1fr; /* slimmer sidebar for better proportion */
     gap: var(--spacing-3xl);
+}
+/* Hide sidebar and go single-column when viewing single post */
+.blog-grid-section.single-post .container {
+    grid-template-columns: 1fr !important;
+}
+.blog-grid-section.single-post .blog-sidebar {
+    display: none !important;
+}
+/* Widen single-post content area for desktop */
+@media (min-width: 1024px) {
+  .blog-grid-section.single-post .container {
+    max-width: 1280px; /* expand content width on desktop */
+  }
+  .blog-grid-section.single-post .blog-posts-grid {
+    display: flex;                 /* center the single card */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 var(--spacing-3xl); /* more breathing room horizontally */
+  }
+  .blog-grid-section.single-post .blog-post-card {
+    max-width: 1160px; /* larger, still readable */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .blog-grid-section.single-post .container {
+    max-width: 1440px; /* optimize for large desktop */
+  }
+  .blog-grid-section.single-post .blog-post-card {
+    max-width: 1280px; /* proportional increase for readability */
+  }
 }
 
 .blog-sidebar {
@@ -1135,14 +1227,17 @@ p {
 
 .sidebar-section {
     background: var(--bg-primary);
-    padding: var(--spacing-xl);
+    padding: var(--spacing-lg);
     border-radius: 12px;
     border: 1px solid var(--border-color);
 }
 
 .sidebar-section h3 {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     color: var(--text-primary);
+    font-size: var(--font-size-base);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 .category-list {
@@ -1150,13 +1245,14 @@ p {
 }
 
 .category-list li {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: 6px;
 }
 
 .category-list a {
     color: var(--text-secondary);
     text-decoration: none;
     transition: color var(--transition-fast);
+    font-size: 0.95rem;
 }
 
 .category-list a.active,
@@ -1167,15 +1263,15 @@ p {
 .tag-cloud {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-xs);
+    gap: 6px;
 }
 
 .tag {
-    padding: var(--spacing-xs) var(--spacing-sm);
+    padding: 6px 10px;
     background: var(--bg-tertiary);
     color: var(--text-secondary);
-    border-radius: 12px;
-    font-size: var(--font-size-xs);
+    border-radius: 10px;
+    font-size: 0.85rem;
     transition: all var(--transition-fast);
     cursor: pointer;
 }
@@ -1195,7 +1291,7 @@ p {
 
 @media (min-width: 768px) {
   .blog-posts-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
   }
 }
 
@@ -2286,5 +2382,63 @@ g-post-card:hover {
   height: 400px;
 }
 
+/* 🌊 Wave Background */
+/* .wave-background {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .wave {
+    position: absolute;
+    width: 200%; height: 200%;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899, #f59e0b);
+    opacity: 0.3;
+    animation: wave-animation 15s ease-in-out infinite;
+  }
+
+  .wave:nth-child(2) {
+    animation-delay: -5s;
+    opacity: 0.2;
+    background: linear-gradient(225deg, #8b5cf6, #ec4899, #f59e0b, #3b82f6);
+  }
+
+  .wave:nth-child(3) {
+    animation-delay: -10s;
+    opacity: 0.15;
+    background: linear-gradient(315deg, #ec4899, #f59e0b, #3b82f6, #8b5cf6);
+  }
+
+  @keyframes wave-animation {
+    0%, 100% {
+      transform: translateX(0) rotate(0deg) scale(1);
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    25% {
+      transform: translateX(-5%) rotate(5deg) scale(1.05);
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      transform: translateX(-10%) rotate(-5deg) scale(0.95);
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    75% {
+      transform: translateX(-5%) rotate(5deg) scale(1.05);
+      border-radius: 70% 30% 40% 60% / 40% 70% 60% 50%;
+    }
+  }
+
+  /* ✨ Fade-in Animation for Hero Content */
+  /* .hero-content {
+    animation: fade-slide-in 1.2s ease-out;
+  }
+
+  @keyframes fade-slide-in {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  } */ 
 
 
+  
